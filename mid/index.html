@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MIDKA</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="js/side.js">
+</head>
+<body class="body">
+	<header class="head">
+		<div class="head-menu">
+			<ul class="head-table">
+				<li class = "head-lines">
+					<a class="head-links" href="">Home</a>
+					<a class="head-links" href="">Main</a>
+					<a class="head-links" href="">About</a>
+					<a class="head-links" href="">Gallery</a>
+					<a class="head-links" href="">Contacts</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="leftsidebar" id="sidebar">
+		<ul class="leftsidebar-table">
+			<li class="leftsidebar-lines">
+				<a class="leftsidebar-links" href="">Recent works</a>
+				<a class="leftsidebar-links" href="">Contacts</a>
+				<a class="leftsidebar-links" href="">Works</a>
+				<a class="leftsidebar-links" href="">News</a>
+				<a class="leftsidebar-links" href="">Tags</a>
+				<a class="leftsidebar-links" href="">About</a>
+				<a class="leftsidebar-links" href="">Works</a>
+			</li>
+		</ul>
+	</div>
+<div class="content" >
+	<section class="content-section">
+		
+		<article class="content-article1">
+			<h4 class="content-paragraph">Lorem ipsum dolor sit amet.</h4>
+			<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At nesciunt quasi voluptatibus quae facilis officiis corporis labore inventore officia assumenda, dolore eos ad necessitatibus facere odio nostrum, porro culpa sequi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus non ab totam deserunt, ad ipsam officiis odit suscipit, cupiditate architecto adipisci placeat nulla repellendus repudiandae esse molestias, porro autem.</p>
+			<img src="images/image.jpg" alt="" class="content-image1">
+		</article>
+		
+		<article class="content-article2">
+			<h4 class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+			<img src="images/image3.jpg" alt="" class="content-image2">
+			<p class="content-text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At nesciunt quasi voluptatibus quae facilis officiis corporis labore inventore officia assumenda, dolore eos ad necessitatibus facere odio nostrum, porro culpa sequi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ducimus non ab totam deserunt, ad ipsam officiis odit suscipit, cupiditate architecto adipisci placeat nulla repellendus repudiandae esse molestias, porro autem.</p>	
+		</article>
+	</section>
+</div>
+
+<script>
+	   if ($(window).height()<=600){
+        var sidebarObj=$("#sidebar");
+        var extraSidebar=sidebarObj.height()-$(window).height();        
+        if ($(document).scrollTop()>extraSidebar){            
+            if (sidebarObj.css("position")!="fixed"){
+                sidebarObj.css({
+                    "position": "fixed",
+                    "top": -extraSidebar+"px"
+                });
+            }
+        }
+        else{
+            sidebarObj.css({
+                "position": "static",
+                "top": 0+"px"
+            });
+        }
+    }
+	 else
+</script>
+<footer class="footer" id="footer">
+		<p>&copy;2016 Tulebayeva Balganym</p>
+		<br>
+		<a href="" class="footer-social"><img src="images/facebook.png" alt=""></a>
+		<a href="" class="footer-social"><img src="images/instagram.png" alt=""></a>
+		<a href="" class="footer-social"><img src="images/vk.png" alt=""></a>	
+	</footer>
+</body>
+</html>
