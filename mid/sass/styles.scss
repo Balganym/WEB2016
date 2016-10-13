@@ -57,8 +57,10 @@ p {font-size: 1em;}
 		text-align: center;
 		.leftsidebar-table{
 	    	display: block;
+	    	background-color: #689C9F;
 	    	position: fixed;
-	    	padding-left: 100px;
+	    	padding-left: 6%;
+	    	padding-right: 5.7%;
 	    	.leftsidebar-lines{
 	    		text-align: center;
 		      	display: block;
@@ -98,7 +100,7 @@ p {font-size: 1em;}
 		clear: both;
 		
 		.content-section{
-			padding: 1em 1em;
+			padding: 1em 0;
 			width: 100%;
 
 			.content-article1{
