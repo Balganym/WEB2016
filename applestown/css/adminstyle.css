@@ -1,0 +1,330 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+
+	font-family: Lora;
+	src: url(fonts/Lora-Regular.ttf);
+}
+
+@font-face{
+
+	font-family: Merienda;
+	src: url(fonts/Merienda-Regular.ttf);
+}
+
+@font-face{
+
+	font-family: Girl;
+	src: url(fonts/TheGirlNextDoor.ttf);
+}
+
+body{
+
+	font-family: Merienda;
+	font-size: 1.2em;
+	background-image: url("img/bgg.png");
+	background-repeat: no-repeat;
+	color: white;
+
+}
+
+a{
+	cursor: pointer;
+}
+
+.exit{
+
+
+	float: right;
+	width: 200px;
+	height: 10px;
+	border: none;
+
+}
+
+
+
+.listbody{
+
+	background-image: url('../img/f.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.listt{
+
+	margin-top: 1em;
+}
+
+.form1{
+
+	margin: 0 auto;
+	width: 90%;
+	height: 90%;
+
+}
+
+.form2{
+
+	width: 90%;
+	margin: 0 auto;
+	padding: 0.5em;
+	padding-top: 2em;
+	background-color: rgba(2, 2, 3, 0.5);
+	border-radius: 10px 10px 0 0; 
+	margin-bottom: 2em;
+	font-family: Lora;
+}
+
+thead {color:white;}
+tbody {color:#B2987F;}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+td{
+	width: 300px;
+	line-height: 23px;
+	text-align: center;
+}
+
+th{
+	width: 300px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.id{
+
+	width: 40px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+h2{
+	
+	text-align: center;
+	margin-bottom: 0.5em;
+
+}
+
+.back{
+
+	display: inline-block;
+	text-align: center;
+	margin-top: 1em;
+	width: 130px;
+	height: 40px;
+	padding: 7px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	text-transform: uppercase;
+	border-radius: 5px;
+	background-color: #FFF;
+	margin-bottom: 1em;
+}
+
+.back a{
+
+	color: black;
+}
+
+.add{
+
+	margin-top: 1em;
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	text-transform: uppercase;
+	background-color: #FFF;
+	font: Lora;
+	font-size: 0.9em;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin-bottom: 1em;
+}
+
+.cls{
+	opacity: 1;
+	width: 20px;
+	position: absolute;
+	top: 2em;
+	left: 550px;
+}
+
+.close{
+	
+	background-color: transparent;
+	width: 0;
+}
+
+.btncart{
+
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	top: 800px;
+	box-sizing: border-box;
+	left: 38%;
+	display: none;
+	border: 2px solid black;
+	background: rgba(0, 5, 15, 0.8); 
+	/*transition: top ease 2s;*/
+}
+
+.divbut{
+
+	width: 100px;
+	margin: 0 auto;
+	margin-left: 110px;
+	margin-top: 20px;
+	height: 30px;
+	text-transform: uppercase;
+	visibility: visible;
+	position: absolute;
+	top: 130px ;
+	left: 35px;
+
+}
+
+.dbut{
+
+	width: 100px;
+	margin: 0 auto;
+	margin-left: 110px;
+	margin-top: 20px;
+	height: 30px;
+	text-transform: uppercase;
+	visibility: hidden;
+	position: absolute;
+	top: 130px ;
+	left: 35px;
+}
+
+.ad{
+
+	opacity: 0;
+	position: absolute;
+	top: 100px;
+	left: 165px;
+}
+
+.btncart p{
+	
+	color: #fff;
+	text-align: center;
+	padding: 8px;
+}
+
+.admin{
+
+	width: 100px;
+	height: 30px;
+	/*background-color: #fff;*/
+	margin: 1em;
+	margin-left: 90%;
+	padding:5px;
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
+
+.win{
+
+	width: 600px;
+	height: 700px;
+	position: absolute;
+	top: -1000px;
+	box-sizing: border-box;
+	left: 28%;
+	/*display: hidden;*/
+	border: 2px solid black;
+	background: rgba(240, 237, 200, 0.5); 
+	transition: top ease 0.8s;
+}
+
+
+
+/****************ADD PHP*******/
+
+form{
+	margin: 3em auto;
+	width: 70%;
+	padding: 2em;
+	border: 2px solid black;
+}
+
+input{
+	width: 80%;
+	line-height: 3em;
+	margin-bottom: 1em;
+	border-radius: 5px;
+	margin-left: 2.5em;
+	padding-left: 10px;
+}
+
+.submit{
+
+	text-transform: uppercase;
+	background-color: rgb(255, 240, 245);
+	border: 1px solid #BCBCBC;
+
+}
+
+form h2{
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+.books .out{
+	display: inline-block;
+	/*border: 2px solid black;*/
+	margin-left: 1%;
+	margin-bottom: 20px;
+	width: 400px;
+	height: 300px;
+}
+
+.books .out img{
+	display: inline-block;
+	margin-top: 1em;
+	margin-left: 1em;
+	width: 170px;
+	height: 250px;
+	border: 1px solid black;
+}
+
+.books .out .in{
+	position: absolute;
+	margin-top: 2em;
+	margin-left: 1em;
+	display: inline-block;
+	width: 180px;
+	height: 190px;
+	/*border: 1px solid black;*/
+	margin-bottom: 1px;
+}
+
+.books .out .in p{
+
+	font-size: 0.8em;
+	padding-bottom: 1em;
+	font-family: Lora;
+}
+
+.books .out .cart{
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	margin-top:21em;
+	margin-left: 1.7em;
+}
