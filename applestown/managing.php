@@ -63,7 +63,7 @@
  <!--       Modul window  -->
 
 	<div class="win" id = "div1">
-		 	<form action="admin.php" method = "POST" enctype="multipart/form-data">
+		 	<form action=«managing.php" method = "POST" enctype="multipart/form-data">
 	 			<h2>add</h2>
 	 	
 	 			<p>Type: <select name="type" id="tp">
