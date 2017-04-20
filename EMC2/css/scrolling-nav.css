@@ -1,0 +1,855 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+img{
+    width: 100%;
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    text-align: center;
+}
+
+.about-section {
+    display: table;
+    height: 100%;
+    padding-top: 80px;
+    text-align: center;
+    background: white;
+}
+
+.products-section {
+    display: table;
+    width: 100%;
+    height: 980px;
+    padding-top: 80px;
+    text-align: center;
+    /*http://www.burgermeister.ru/images/docs//Image/salmon_steak-p-xxl.jpg*/
+    background-image: url('../img/trout.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: fixed;
+    background-attachment: fixed;
+}
+
+.feedback-section {
+    display: table;
+    width: 100%;
+    padding-top: 70px;
+    text-align: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.recipes-section {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/trout.jpg');
+    padding-top: 70px;
+    text-align: center;
+}
+
+.contacts-section {
+    display: table;
+    width: 100%;
+    height: 720px;
+    padding-top: 70px;
+    text-align: center;
+    background: ##ecf0f1;
+}
+
+.navbar-main{
+    background-color: rgba(255,255,255,0.8);
+}
+.page-scroll{
+    color: black;
+}
+
+header{
+    position: relative;
+    height: 100%;
+}
+
+header.carousel {
+    height: 76%;
+}
+
+header.carousel .item,
+header.carousel .item,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.my-container{
+
+    width: 100%;
+    height: 30%;
+}
+
+.plus {
+    display: table; 
+}
+
+.adv {
+    display: table-cell;
+    vertical-align: middle; 
+}
+.adv .title, .adv .art {
+    text-align: center;
+}
+
+.about-section{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content{
+    font-size: 20px;
+    text-align: left;
+    color: rgba(150, 150, 150, 0.8);
+}
+
+.about-h{
+    color: #333;
+}
+
+.down{
+    margin-bottom: 20px;
+}
+
+.about-hr{
+    width: 40%;
+}
+
+.about-p{
+    color: #195A29;
+}
+.portfolio{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.delivery-box{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,0,0,0.7);
+    margin-bottom: 40px;
+    margin-top: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.good{
+    padding: 15px;
+    border: 2px solid white;
+    margin: 10px;
+    min-width: 200px;
+    max-width: 300px;
+    color: white;
+}
+
+.buy{
+
+    width: 60%;
+    height: 30px;
+    background-color: #4CA149;
+    border: black;
+    border-radius: 5px;
+}
+
+.delivery-h{
+    color: whitesmoke;
+}
+
+.delivery-section-2{
+
+    display: table;
+    height: 100%;
+    padding-top:70px; 
+    background-color: white;
+}
+
+.delivery-content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.delivery-outer{
+    
+    padding:0;
+    
+}
+
+.recipe-box{
+    width: 90%;
+}
+
+.recipe{
+
+    background-color: white;
+    padding: 20px;
+}
+
+.recipe-p, .recipe-h{
+
+    margin-top: 10px;
+}
+
+.forel{
+    width: 100%;
+    top: 30%;
+    position: absolute;
+}
+.forel-h1{
+    font-size: 60px;
+    font-weight: 900;
+    text-shadow: 1px 1px #000000;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+.forel-btn{
+    margin-top: 10px;
+    width: 350px;
+    font-size: 28px;
+    height: 66px;
+    line-height: 54px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: whitesmoke;
+    border-radius: 12px;
+    background-color: #ff5e00; 
+}
+
+@media(max-width:767px) {
+
+    .forel-btn{
+
+        width: 250px !important;
+        font-size: 20px;
+    }
+
+    .forel-h1{
+
+        font-size: 2.5em;
+    }
+}
+
+
+@media(max-width:1000px) {
+
+    .products-section{
+
+        background-image: none;
+        background-color: #6BCBE5;
+    }
+}
+
+.pokr{
+    position: relative;
+}
+.pokr2{
+    background-color: rgba(0, 0, 50, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/***-------------------------Second-part-------------------------***/
+
+.title{
+    text-transform: uppercase;
+}
+
+.map{
+
+    width: 100%;
+    height: 450px;
+    frameborder: 0;
+    border : 0;
+	vertical-align: middle;
+}
+
+.contacts-subtitle{
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.contact-form{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-h{
+
+    color: #3B3D43;
+}
+
+.form{
+    
+    width: 100%;
+    height: 45px;
+    font-size: 1.2em;
+    padding-left: 10px;
+	padding-rigth: 10px;
+	verticla-align: center;
+    margin-bottom: 8px;
+    border-radius: 2px;
+}
+
+.form-message{
+
+    width: 100%;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.contact-submit{
+    
+    margin-top: 10px;
+    float:left;
+    clear: both;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(255,114,0);
+    border-color: rgb(255,114,0);
+    font-size: 1.2em;
+    color: white;
+}
+
+.footer-body{
+    margin-top: 20px;
+    width: 100%;
+    height: 130px;
+}
+
+.footer-txt{
+    text-align: center;
+}
+
+.footer-title{
+    margin-bottom: 10px;
+}
+
+.icon{
+    
+    text-align: center;
+    margin: 10px;
+}
+
+.icon-fb{
+    
+    text-align: center;
+    margin: 10px;
+}
+
+.icon-fb:hover{
+    
+    color: rgba(255,114,0,1);
+    cursor: pointer;
+}
+
+
+.icon:hover{
+    color: rgb(255,114,0);
+}
+
+.feedbacks{
+
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.boxes{
+    width: 250px;
+}
+
+
+@media(max-width:767px) {
+
+    .boxes{
+        width: 210px;
+
+    }
+}
+
+.ava{
+    width: 50%;
+    position: relative;
+    top:60px;
+    border-radius: 200px;
+}
+
+.fb{
+
+    background-color: #B9C9E0;
+    padding: 70px 5px 10px 5px;
+
+}
+
+.img-padding{
+    padding-bottom: 30px;
+}
+
+.footer-clr{
+	width: 100%;
+    color: whitesmoke;
+    padding-top: 2px;
+    /*background-color: #282c50;*/
+    background-image: url("../img/footer2.jpg");
+    background-size: 100%;
+}
+
+footer div div h4{
+    font-size: 15px;
+}
+
+footer div div p{
+    font-size: 14px;
+}
+
+.social-media{
+    text-align: center;
+}
+
+.empty{
+
+    max-width: 70px;
+}
+
+.no{
+
+    height: 10px;
+}
+
+/*_______CART____________*/
+
+.form-list{
+
+    width: 100%;
+    height: 34px;
+    font-size: 1.2em;
+    padding-left: 10px;
+	padding-right: 10px;
+    margin-bottom: 9.5px;
+}
+
+.products-cart{
+
+    display: table;
+    width: 100%;
+    height: 70%;
+    background-color: whitesmoke;
+    padding-top: 2px;
+}
+
+.cart-body{
+
+    width: 96%;
+    margin: 1em auto;
+    display: table;
+    background-color: white;
+}
+
+.cart-inner{
+
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.cart-h{
+    padding: 10px;
+    color: rgba(255,114,0,0.8);
+}
+
+.cart-submit{
+    width: 100%;
+    margin: 10px auto;
+    height: 40px;
+    background-color: rgb(255,114,0);
+    border-color: rgb(255,114,0);
+    color: white;
+}
+
+.cart-count{
+    height: 34px;
+    font-size: 1.2em;
+    padding-left: 10px;
+	padding-right: 10px;
+    width: 46%;
+    margin-right: 10px;
+}
+
+.counter-plus{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.counter-minus{
+
+    width: 30px;
+    height: 30px;
+}
+
+.cart-footer{
+
+    background-color: whitesmoke;
+    height: 20px;
+}
+
+.counter{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cart-inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*    __________3 - PART_________ */
+
+.basketRight{
+    float: right;
+}
+.iconsAbout{
+    width: 100%;
+}
+
+.threeIcons-i{
+    padding: 20px;
+    width: 70%;
+}
+
+.about-section2{
+    padding: 50px 20px 70px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+#custom_carousel .item {
+
+    color:#000;
+    background-color:#eee;
+    padding:20px 0;
+}
+#custom_carousel .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#custom_carousel .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#custom_carousel .controls li.active {
+    background-color:#eee;
+    border-top:3px solid orange;
+}
+#custom_carousel .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+.about-icons{
+    margin: 0 auto;
+    width: 96%;
+    margin-bottom: 20px;
+}
+
+.about-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.down2{
+    margin-bottom: 40px;
+}
+
+.rec-h{
+	color: whitesmoke;
+}
+
+.slide-x{
+	padding: 20px;
+}
+
+.cnt{
+    
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    font-size: 1.3em; 
+    margin-right: 5px;
+}
+
+.cnt:hover{
+
+    cursor: pointer;
+    background-color: rgb(255,114,0);
+    text-decoration: none;
+}
+
+.about-down{
+
+    width: 96%;
+}
+
+
+.about-footer{
+
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-text{
+    text-align: justify;
+    width: 48%;
+    margin-right: 30px;
+}
+
+.about-galery{
+
+   width: 48%; 
+}
+
+.imgs{
+
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+@media(max-width:767px) {
+    .about-galery{
+        width: 96%;
+        margin: 0 auto;
+    }
+    .about-text{
+        width: 96%;
+        margin: 0 auto;
+        margin-bottom: 20px; 
+    }
+    .imgs{
+        width: 96%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:768px) {
+    .footer-clr{
+        padding-top: 10px;
+        height: 360px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+    .footer-body{
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .contact-submit{
+        width:100%;
+    }
+    .contact-form{
+        padding-top: 20px;
+    }
+    .delivery-section-2{
+        height: 580px;
+    }
+    ul li a{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 414px){
+    /* For desktop: */
+    .contact-submit{
+        width:100%;
+    }
+    .contact-form{
+        padding-top: 20px;
+    }
+    .delivery-section-2{
+        font-size: 1em;
+    }
+}
+
+
+.content{
+    width: 96%;
+    margin: 0 auto;
+}
+
+
+/*_______new section__________*/
+
+.about-us{
+
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+}
+
+.about-boxx{
+    max-width: 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+}
+
+.social{
+    width: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-delivery{
+
+    margin: 0 auto;
+}
+
+.map-form{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.mapmap{
+    width: 48%;
+	margin-right: 10px;
+}
+
+.form-map{
+    width: 49%;
+}
+
+@media(max-width:800px){
+	.map-form{
+		flex-direction: column;
+	}
+	.mapmap{
+		width: 96%;
+	}
+	.form-map{
+		width: 96%;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 414px){
+	.map-form{
+		flex-direction: column;
+	}
+	.mapmap{
+		width: 96%;
+	}
+	.form-map{
+		width: 96%;
+	}
+}
+
+.logo{
+
+    width: 140px;
+}
